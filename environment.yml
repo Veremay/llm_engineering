@@ -1,4 +1,4 @@
-name: llms
+name: llms_engineering
 channels:
   - conda-forge
   - defaults
