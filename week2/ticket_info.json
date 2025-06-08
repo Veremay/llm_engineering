@@ -1,0 +1,49 @@
+{
+  "movies": [
+    {
+      "movie_name": "星际穿越",
+      "genre": "科幻,冒险,剧情",
+      "price": 50,
+      "show_times": [
+        {
+          "time": "2025-06-09 10:00",
+          "remaining_seats": 35
+        },
+        {
+          "time": "2025-06-09 14:30",
+          "remaining_seats": 28
+        }
+      ]
+    },
+    {
+      "movie_name": "泰坦尼克号",
+      "genre": "爱情,灾难",
+      "price": 45,
+      "show_times": [
+        {
+          "time": "2025-06-09 12:00",
+          "remaining_seats": 42
+        },
+        {
+          "time": "2025-06-09 19:00",
+          "remaining_seats": 28
+        }
+      ]
+    },
+    {
+      "movie_name": "流浪地球2",
+      "genre": "科幻,灾难",
+      "price": 55,
+      "show_times": [
+        {
+          "time": "2025-06-09 16:00",
+          "remaining_seats": 22
+        },
+        {
+          "time": "2025-06-09 20:30",
+          "remaining_seats": 18
+        }
+      ]
+    }
+  ]
+}
