@@ -16,7 +16,7 @@ class Item:
     """
     
     tokenizer = AutoTokenizer.from_pretrained(BASE_MODEL, trust_remote_code=True)
-    PREFIX = "Price is $"
+    PREFIX = "Price is $"  # 价格前缀
     QUESTION = "How much does this cost to the nearest dollar?"
     REMOVALS = ['"Batteries Included?": "No"', '"Batteries Included?": "Yes"', '"Batteries Required?": "No"', '"Batteries Required?": "Yes"', "By Manufacturer", "Item", "Date First", "Package", ":", "Number of", "Best Sellers", "Number", "Product "]
 
@@ -45,7 +45,7 @@ class Item:
     def scrub(self, stuff):
         """
         Clean up the provided text by removing unnecessary characters and whitespace
-        Also remove words that are 7+ chars and contain numbers, as these are likely irrelevant product numbers
+        Also remove words that are 7+ chars and contain numbers, as these are likely irrelevant product numbers, and they use a lot of tokens
         """
         stuff = re.sub(r'[:\[\]"{}【】\s]+', ' ', stuff).strip()
         stuff = stuff.replace(" ,", ",").replace(",,,",",").replace(",,",",")
