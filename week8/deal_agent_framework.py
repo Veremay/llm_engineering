@@ -70,10 +70,10 @@ class DealAgentFramework:
         text = BG_BLUE + WHITE + "[Agent Framework] " + message + RESET
         logging.info(text)
 
-    def run(self) -> List[Opportunity]:
+    def run(self) -> List[Opportunity]: # 执行规划代理，获取新的商品机会
         self.init_agents_as_needed()
         logging.info("Kicking off Planning Agent")
-        result = self.planner.plan(memory=self.memory)
+        result = self.planner.plan(memory=self.memory) # 核心逻辑
         logging.info(f"Planning Agent has completed and returned: {result}")
         if result:
             self.memory.append(result)
