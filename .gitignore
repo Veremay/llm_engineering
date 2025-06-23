@@ -131,6 +131,8 @@ env.bak/
 venv.bak/
 llms/
 llms.bak/
+week7/config.py
+*/config.py
 
 # Spyder project settings
 .spyderproject
