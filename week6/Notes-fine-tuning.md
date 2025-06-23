@@ -58,3 +58,13 @@ To selecting, training, and applying an LLM to a commercial problem
 - Address scaling, monitoring, security and compliance
 - Measure the Business-Focused Metrics identified in step 1
 - Continuously retrain and measure performance
+
+![alt text](average_absolute_prediction.png)
+
+### 使用 Frontier Model 进行微调的数据准备
+
+![alt text](fine_tuning-data_requirements.png)
+
+### three stages to fine-tuning with OPENAI
+
+![alt text](frontier_average_prediction_error.png)
